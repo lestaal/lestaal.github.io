@@ -1,0 +1,19 @@
+body {
+    font-family: 'Duru Sans', sans-serif;
+}
+
+button {
+    font-family: 'Duru Sans', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #528ecc;
+    background-color: #3599fc;
+    border: 1px solid #1e568f;
+    color: #ffffff;
+    height: 40px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #2a6db0;
+    cursor: pointer;
+}

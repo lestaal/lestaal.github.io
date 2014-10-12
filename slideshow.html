@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>    
+    "use strict";
+    var imgContainer; 
+    var images;
+    var index;
+
+    function init() {
+        imgContainer = document.getElementById("images");
+        images = imgContainer.getElementsByTagName("img");
+        index = 0;
+        for (var i=0; i < images.length; i++) {
+            images[i].style.visibility = 'hidden';
+        }
+        setInterval(nextImage, 500);
+    }
+
+    function nextImage() {
+        images[index].style.visibility = 'visible';
+        images[index == 0 ? images.length - 1 : index - 1].style.visibility = 'hidden';
+        index = index == images.length - 1 ? 0 : index + 1;
+        return 0;
+    }
+
+</script>
+</head>
+<body onload="init()">
+    <div id="images">
+        <img src="http://thefilmreview.com/wp-content/uploads/2012/01/canetoadsmain.jpg"></img>
+        <img src="http://www.ugaurbanag.com/sites/default/files/resize/factsheet-images/6/armadillo2-268x277.jpg"></img>
+        <img src="http://media-cache-ak0.pinimg.com/236x/4a/36/f1/4a36f1cec4aab01359628958d4537e04.jpg"></img>
+    </div>
+</body>
+</html>

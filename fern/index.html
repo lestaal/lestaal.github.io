@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="fern.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+</head>
+<body onLoad="fern()">
+    <div class="view">
+    <canvas id="canvas" width="300" height="400">Error: no HTML5</canvas>
+    <br/><br/>
+    <button onclick="fern(false)">More iterations</button>
+    <button onclick="fern(true)">Regenerate</button>
+    </div>
+    
+    <span class="text">
+    The Barnsley fern is a fractal that uses affine transformations.
+    This particular fern uses four affine transformations. Several 
+    iterations are run with one point transformed and plotted in 
+    each iteration. Each of the four transformations is chosen 
+    randomly by a certain percentage of the iterations.
+    </span>
+</body>
+</html>

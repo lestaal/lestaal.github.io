@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css' />
+	<link href='circlegame.css' rel='stylesheet' type='text/css' />
+	<script src="easeljs-0.7.1.min.js"></script>
+	<script src="https://rawgithub.com/madrobby/keymaster/master/keymaster.js"></script>
+	<script src="main.js"></script>
+</head>
+<body onLoad="init()">
+	<br/>Points: <span id="points" value="0">0</span>
+	<br/>
+	<canvas id="game-canvas" width="600" height="600">Error: no HTML5</canvas>
+	<br/>
+	<button onclick="init()" style="margin-left: 250px;">New Game</button>
+	<br/><strong>How to play</strong>
+	<li>Completely overlap other circles to eat them.</li>
+	<li>The closer in size you are to the circle you eat, the more points you get.</li>
+	<li>W, A, S, D keys to move.</li>
+	<li>Use the period and comma keys to increase and decrease radius. Think &gt; to increase and &lt; to decrease.</li>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="tree.css" rel="stylesheet" type="text/css" />
+    <script src="tree.js"></script>
+</head>
+<body onLoad="init()">
+    <div class="view">
+        <canvas id="canvas" width="500" height="500">Error: no HTML5</canvas>
+    </div>
+    
+    <span class="text">
+        This is an H tree fractal pattern. It is useful in circuit design 
+        because the uniform wiring causes equal propagation delays.
+        <br/><br/>
+        Stage: <span id="stage">1</span>
+        <br/><br/>
+        <button onclick="tree()">Next Stage</button>
+        <button onclick="restart()">Restart</button>
+    </span>
+</body>
+</html>

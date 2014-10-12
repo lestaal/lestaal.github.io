@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.css" /> -->
+<link rel="stylesheet" type="text/css" href="http://bootswatch.com/cerulean/bootstrap.min.css" />
+<script src="list.js"></script>
+</head>
+
+<body onload="getCookie();">
+<div class="col-xs-8" style="margin-left:16%;" align="center">
+
+	<center><h2>List</h2></center>
+
+	<!-- add item to list -->
+	<form onsubmit="return addItem(document.getElementById('newItem').value, true);">
+		Add an item to the list:
+		<br/><input type="text" id="newItem" class="form-control" />
+		<br/><input type="submit" class="btn btn-primary" value="add to list" />
+	</form>
+
+	<!-- list -->
+	<br/><br/><ul id="list" class="list-group"></ul>
+
+	<!-- remove all button -->
+	<input type="button" class="btn btn-danger btn-sm" onclick="removeAll()" value="remove all" />
+
+</div>
+</body>
+</html>

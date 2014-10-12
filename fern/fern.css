@@ -1,0 +1,26 @@
+body {
+   font-family: "Verdana", sans-serif;
+}
+
+.view {
+    float: left;
+}
+
+.text {
+    display: inline-block;
+    width: 400px;
+}
+
+button {
+    text-align: center;
+    background-color: #46BD64;
+    border: 1px solid #084D19;
+    color: #000000;
+    height: 40px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #389C51;
+    cursor: pointer;
+}
