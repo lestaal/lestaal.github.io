@@ -1,0 +1,45 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<style>
+    body {
+        background-image: url("images/thegreenergrass_1280x800.jpg");
+        background-color: #ffffff;
+    }
+    h1 {
+        left: 0;
+        line-height: 200px;
+        margin: auto;
+        margin-top: -100px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        font-family: 'Alegreya', serif;
+    }
+</style>
+<script>    
+    "use strict";
+    var text;
+    var words = ["Daniel,", "will", "you", "go", "to", "Esperanza", "with", "me?"];
+    var index;
+
+    function init() {
+        text = document.getElementById("text");
+        index = 0;
+        setInterval(nextWord, 800);
+    }
+
+    function nextWord() {
+        text.innerHTML = words[index];
+        index = index == words.length - 1 ? 0 : index + 1;
+        return 0;
+    }
+
+</script>
+</head>
+<body onload="init()">
+    <h1 id="text"></h1>
+</body>
+</html>
