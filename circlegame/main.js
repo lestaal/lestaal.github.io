@@ -158,16 +158,16 @@ function init() {
 
     // if circle is at end of canvas, wrap around to other side
     this.wrap = function() {
-      if (this.circle.x > canvWidth){
+      if (this.circle.x - this.radius > canvWidth){
         this.circle.x = 0;
       }
-      else if (this.circle.x < 0){
+      else if (this.circle.x + this.radius < 0){
         this.circle.x = canvWidth;
       }
-      if (this.circle.y > canvHeight){
+      if (this.circle.y - this.radius > canvHeight){
         this.circle.y = 0;
       }
-      else if (this.circle.y < 0) {
+      else if (this.circle.y + this.radius < 0) {
         this.circle.y = canvHeight;
       }
     }
